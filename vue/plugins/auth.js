@@ -29,7 +29,7 @@ export default {
 
       if (isPrimitive(value)) {
         const item = permissions.find(v => v[AUTH_KEY] === value)
-        return item && item[AUTH_KEY];
+        return item && item[AUTH_KEY][AUTH_NAME];
       }
 
       return '';
