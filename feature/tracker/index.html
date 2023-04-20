@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <button id="script-error">script-error</button>
+    <button id="link-error">link-error</button>
+    <button id="get-success">get-success</button>
+    <button id="post-error">post-error</button>
+    <button id="js-error-RangeError">js-error-RangeError</button>
+    <button id="js-error-ReferenceError">js-error-ReferenceError</button>
+    <button id="console-log-test">console-log-test</button>
+    <button id="unhandledrejection-test">unhandledrejection-test</button>
+    <button id="history-test">history-test</button>
+    <button id="hashChange-test">hashChange-test</button>
+
+    <button id="exception-hint">event hints example</button>
+    <button data-label="User Defined Label" id="breadcrumb-hint">breadcrumb hints example</button>
+
+    <script type="module" src="/src/example.ts"></script>
+    <div id="vue-ele">
+      {{ message }}
+      <button @click="doIt">Do It</button>
+    </div>
+
+  </body>
+</html>

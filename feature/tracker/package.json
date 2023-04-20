@@ -1,0 +1,30 @@
+{
+  "name": "tracker-sdk",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/tracker.umd.cjs",
+  "module": "./dist/tracker.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/tracker.js",
+    "require": "./dist/tracker.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "@types/node": "^18.14.6"
+  },
+  "dependencies": {
+    "vue": "^2.7.14"
+  }
+}
